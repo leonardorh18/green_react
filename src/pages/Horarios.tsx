@@ -2,18 +2,19 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 
 import Header from '../components/Header';
-// import './Notas.css';
 
-const Notas: React.FC = () => {
+
+const Horarios: React.FC = () => {
   return (
     <IonPage>
-     <Header pageName="Notas"/>
+      <Header pageName="Horarios"/>
       <IonContent>
         
-       aqui cara
+      
+   
       </IonContent>
     </IonPage>
   );
 };
 
-export default Notas;
+export default Horarios;
