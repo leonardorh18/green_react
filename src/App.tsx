@@ -33,6 +33,8 @@ import Configuracao from './pages/Configuracao';
 import Biblioteca from './pages/Biblioteca';
 import Notas from './pages/Notas';
 import Ru from './pages/Ru';
+import Login from './pages/Login';
+
 
 const App: React.FC = () => (
   <IonApp>
@@ -41,6 +43,8 @@ const App: React.FC = () => (
         <Menu />
         <IonRouterOutlet id="main">
           <Route path="/feed" component={Feed} exact={true} />
+          <Route path="/login" component={Login} exact={true} />
+       
           <Route path="/notas" component={Notas} />
           <Route path="/Horarios" component={Horarios} />
           <Route path="/Material" component={Material} />
@@ -49,7 +53,7 @@ const App: React.FC = () => (
           <Route path="/ru" component={Ru} />
           <Route path="/info" component={Info} />
           <Route path="/Configuracao" component={Configuracao} />
-          <Route path="/" render={() => <Redirect to="/feed" />} exact={true} />
+          <Route path="/" render={() => <Redirect to="/login" />} exact={true} />
         </IonRouterOutlet>
       </IonSplitPane>
     </IonReactRouter>
